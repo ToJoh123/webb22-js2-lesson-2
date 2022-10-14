@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        body {
+            padding: 32px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+        }
+        a, p, button, li, input {
+            font-size: 20px;
+        }
+        div {
+            padding: 16px 0px;
+        }
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            /*TODO: Add hover effect */
+        }
+        a {
+            text-decoration: none;
+            color: #892300;
+        }
+        a:visited, a:link {
+            /*TODO: Add visited effect */
+        }
+
+        a:hover {
+            text-decoration: underline;
+            
+        }
+        input {
+            margin: 0 8px;
+        }
+        input:focus {
+            box-shadow: 0px 0px 4px 2px #892300;
+            border: 0;
+            outline: none;
+            background-color: aqua;
+        }
+
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 16px;
+            border: 1px solid #000;
+            border-radius: 4px;
+            margin: 8px 0px;
+        }
+
+        .list-item:first-child {
+            background-color: red;
+        }
+
+        .list-item:nth-child(2) {
+            background-color: green;
+        }
+        .list-item:last-child {
+            background-color: blue;
+        }
+
+        .content {
+            
+            padding: 16px;
+            margin: 16px;
+        }
+
+        .content p:not(.primary-text) {
+            /* TODO: Add secondary text style */
+        }
+
+        .dark-content {
+            background-color: rgb(25, 25, 25);
+
+        }
+
+        .dark-content h1 {
+            color: #fff;
+            position: relative;
+        }
+
+        .dark-content h1::before {
+            content: attr(data-header);
+            color: rgb(68, 68, 255);
+            margin-right: 8px;
+            position: absolute;
+            left: 1.2px;
+        }
+
+        .dark-content h1::after {
+            content: "😎";
+            color: red;
+            margin-left: 8px;
+        }
+        
+        .light-content {
+            background-color: #fff;
+        }
+        
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <a href="https://www.google.com">Google</a>
+    </div>
+    <div>
+        <button>Button</button>
+    </div>
+    <div>
+        <ul>
+            <li class="list-item">list item 1</li>
+            <li class="list-item">list item 2</li>
+            <li class="list-item">list item 3</li>
+            <li class="list-item">list item 4</li>
+            <li class="list-item">list item 5</li>
+            <li class="list-item">list item 6</li>
+        </ul>
+    </div>
+    <input type="text" placeholder="Enter your first name">
+    <input type="text" placeholder="Enter your middle name">
+    <input type="text" placeholder="Enter your last name">
+
+    <div class="content dark-content">
+        <p class="primary-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, impedit dolore nam optio quidem saepe quaerat. Dolorem possimus iure distinctio, unde, voluptas sequi molestiae nulla eaque fugit temporibus mollitia saepe.
+        </p>
+    </div>
+    <div class="content light-content">
+        <p class="secondary-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.
+        </p>
+    </div>
+
+    <div class="content dark-content">
+        <h1 data-header="Cool title">Cool title</h1>
+    </div>
+</body>
+</html>

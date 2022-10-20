@@ -2,11 +2,17 @@
 /* GENERAL */
 
 *{
-
+    margin: 0;
 }
 
-.body {
-
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-color: #FDFDFE;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    width: 100vw;
 }
 
 h1 {
@@ -14,18 +20,42 @@ h1 {
 }
 
 h2 {
-    
+
+
 }
 
 h3 {
 
 }
 
-footer {
+.link {
+
+}
+
+.link:hover {
 
 }
 
 .container {
+    /*change to min() for layout solution*/
+
+}
+
+.tag {
+
+
+}
+
+h2.tag {
+
+}
+
+.tag::before {
+
+
+}
+
+h2.tag::before {
 
 }
 
@@ -35,29 +65,100 @@ footer {
 
 }
 
+.header .container {
+
+}
+
+.header-title-letter {
+
+}
+
 .header-search {
-    border: 0;
-    padding: 4px 8px;
+
+}
+
+.header-search::placeholder {
+
+}
+
+nav .nav-list {
+
 }
 
 /* CONTENT */
 
+.main-header-header{
 
+}
+
+.section-header {
+
+}
 /* ARTICLE */
 
 .article {
+
+
+}
+
+.article:hover .article-overlay {
+
+}
+
+
+
+.featured-articles {
+
+}
+
+
+/* In pseudo redefine background gradient as .article-overlay */
+.article-overlay {
+
+}
+
+.article.main-article {
+
+}
+
+.article1 {
+
+}
+
+.article2 {
+
+}
+
+.article3 {
+
+}
+
+.article4 {
+}
+
+.article5 {
+
+}
+
+.article6 {
+
+}
+
+
+.main-article-play-icon {
+
+}
+
+.main-article-play-icon:hover {
 
 }
 
 .article-content {
 
-}
-
-.main-article {
 
 }
 
-.main-article-header{
+.article-header.main-article-header{
 
 }
 
@@ -65,7 +166,7 @@ footer {
 
 }
 
-.article-summary {
+.article-summery {
 
 }
 
@@ -73,9 +174,21 @@ footer {
 
 }
 
+.article-tag:hover {
+
+}
+
 /* NEWS ARTICLE */
 
+.news-articles {
+
+}
+
 .news-article {
+
+}
+
+.news-article-image {
 
 }
 
@@ -91,3 +204,21 @@ footer {
 
 }
 
+.main-header-timestamp {
+
+}
+
+/* FOOTER */
+
+footer {
+
+
+}
+
+footer .link-grid {
+
+}
+
+.footer .footer-list-item {
+
+}

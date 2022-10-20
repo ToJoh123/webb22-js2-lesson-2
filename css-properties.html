@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./solutions/css-layout-solution.css">
+    <link rel="stylesheet" href="./style.css">
     <title>SSB</title>
 </head>
 <body>
@@ -21,12 +21,12 @@
             </div>
             <nav>
                 <ul class="nav-list">
-                    <li class="header-list-item"><a href="#" class="link header-link">Hem</a></li>
-                    <li class="header-list-item"><a href="#" class="link header-link">Nyheter</a></li>
-                    <li class="header-list-item"><a href="#" class="link header-link">Sport</a></li>
-                    <li class="header-list-item"><a href="#" class="link header-link">Arbete</a></li>
-                    <li class="header-list-item"><a href="#" class="link header-link">Teknologi</a></li>
-                    <li class="header-list-item"><a href="#" class="link header-link">Kultur</a></li>
+                    <li class="header-list-item link"><a href="#" class="link header-link">Hem</a></li>
+                    <li class="header-list-item link"><a href="#" class="link header-link">Nyheter</a></li>
+                    <li class="header-list-item link"><a href="#" class="link header-link">Sport</a></li>
+                    <li class="header-list-item link"><a href="#" class="link header-link">Arbete</a></li>
+                    <li class="header-list-item link"><a href="#" class="link header-link">Teknologi</a></li>
+                    <li class="header-list-item link"><a href="#" class="link header-link">Kultur</a></li>
                 </ul>
             </nav>
             <div>
@@ -44,6 +44,7 @@
             </section>
             <section class="featured-articles">
                 <article class="article main-article">
+                    <div class="article-overlay"></div>
                     <div class="main-article-play-icon">&#9654;</div>
                     <div class="article-content">
                         
@@ -57,6 +58,7 @@
                     </div>
                 </article>
                 <article class="article article1">
+                    <div class="article-overlay"></div>
                     <div class="article-content">
                         
                         <h3 class="article-header">
@@ -66,6 +68,7 @@
                     </div>
                 </article>
                 <article class="article article2">
+                    <div class="article-overlay"></div>
                     <div class="article-content">
                         
                         <h3 class="article-header">
@@ -75,6 +78,7 @@
                     </div>
                 </article>
                 <article class="article article3">
+                    <div class="article-overlay"></div>
                     <div class="article-content">
                         
                         <h3 class="article-header">
@@ -84,6 +88,7 @@
                     </div>
                 </article>
                 <article class="article article4">
+                    <div class="article-overlay"></div>
                     <div class="article-content">
                         
                         <h3 class="article-header">
@@ -93,6 +98,7 @@
                     </div>
                 </article>
                 <article class="article article5">
+                    <div class="article-overlay"></div>
                     <div class="article-content">
                         
                         <h3 class="article-header">
@@ -103,7 +109,7 @@
                 </article>
             </section>
             <section class="news">
-                <h2 class="tag section-header">Nyheter</h2>
+                <h2 data-content="📰" class="tag section-header">Nyheter</h2>
                 <div class="news-articles">
                     
                     <article class="news-article">
@@ -166,19 +172,27 @@
                     </article>
                 </div>
             </section>
+            <section class="world">
+                <h2 data-content="🌎" class="tag section-header">Världen</h2>
+                ...
+            </section>
+            <section class="world">
+                <h2 data-content="📱" class="tag section-header">Teknologi</h2>
+                ...
+            </section>
         </div>
         </main>
         <footer class="footer">
             <div class="container">
                 <h2 class="footer-header">Utforska SSB</h2>
                 <ul class="link-grid">
-                    <li class="footer-list-item"><a href="#" class="link footer-link">Hem</a></li>
-                    <li class="footer-list-item"><a href="#" class="link footer-link">Nyheter</a></li>
-                    <li class="footer-list-item"><a href="#" class="link footer-link">Sport</a></li>
-                    <li class="footer-list-item"><a href="#" class="link footer-link">Arbete</a></li>
-                    <li class="footer-list-item"><a href="#" class="link footer-link">Teknologi</a></li>
-                    <li class="footer-list-item"><a href="#" class="link footer-link">Kultur</a></li>
-                    <li class="footer-list-item"><a href="#" class="link footer-link">Väder</a></li>
+                    <li class="footer-list-item link"><a href="#" class="link footer-link">Hem</a></li>
+                    <li class="footer-list-item link"><a href="#" class="link footer-link">Nyheter</a></li>
+                    <li class="footer-list-item link"><a href="#" class="link footer-link">Sport</a></li>
+                    <li class="footer-list-item link"><a href="#" class="link footer-link">Arbete</a></li>
+                    <li class="footer-list-item link"><a href="#" class="link footer-link">Teknologi</a></li>
+                    <li class="footer-list-item link"><a href="#" class="link footer-link">Kultur</a></li>
+                    <li class="footer-list-item link"><a href="#" class="link footer-link">Väder</a></li>
             </div>
             
         </ul>

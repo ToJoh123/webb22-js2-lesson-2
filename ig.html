@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram clone</title>
+    <style>
+      .card {
+        /* background-image: url("https://picsum.photos/300/400?blur") ; fallback */
+        /* background-image: linear-gradient(
+            rgba(0, 0, 255, 0.5),
+            rgba(255, 255, 0, 0.5)
+          ),
+          url("/images/article/article-image4.jpeg"); */
+      }
+      .card-image {
+        position: relative;
+      }
+      .card-content {
+        position: absolute;
+        left: 30px;
+        top: 250px;
+      }
+      .card-content p {
+        contain: content;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-contaier">
+      <header>
+        <div class="header-content">Commercial corp</div>
+      </header>
+      <div class="card">
+        <div class="card-img">
+          <img src="https://picsum.photos/300/400?blur" alt="" />
+
+          <div class="card-content">
+            <h3>buy more shit</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              amet eius, eos blanditiis a libero eveniet dolore dolorem rerum
+              obcaecati.
+            </p>
+            <button>press here</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

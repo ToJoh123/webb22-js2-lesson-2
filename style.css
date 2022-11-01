@@ -1,14 +1,49 @@
 
-/* GENERAL */
+/*
+ Använd dessa och andra för att slutföra projektet enligt specification. En kund kommer in och frågar om en re-branding av deras nyhets hemsida SSB kunden har vissa krav och kommer komma med flera krav vid ett senare skede.
+
+- Färger
+    - Header = #4484CE x
+    - Text i header = #FFFFFF x
+    - header-search bakgrund = #7aa8dc x
+    - header-search text = #FFFFFF x
+    - body = #FDFDFE x
+    - article-header = #FFFFFF x
+    - article-summery, article-tag = #d3d3d3 x
+    - main-header-timestamp = #6c6c6c x
+    - news-article-header = #212121 x
+    - news-article-summary, main-header-header, section-header = #4a4a4a x
+    - footer = #4c4c4cx
+    - footer text = #FFFFFFx
+- Texter
+    - h1  ska ha familj **sans-serif** och storlek **24px** x
+    - all annan text ska ha familj **'Times New Roman', Times, serif**
+    - h2 storlek **22px** x
+    - article-header och news-article-header ska ha **20px**x
+    - article-tag och news-article-tag ska ha 14px i storlek
+    - övrig text har 16px
+- Storlek
+    - container ska vara **1200px** i bredd
+        - Med en margin av 0 i vertikal och auto i horizontal
+    - news-article
+        - höjd 350px
+        - bild ./images/news/news-image1.jpeg
+            - höjd 200px
+        
+        [https://source.unsplash.com/random/800x450](https://source.unsplash.com/random/800x450)
+        
+*/
 
 *{
-    margin: 0;
+    margin: 0; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
 }
 
 body {
     margin: 0;
     padding: 0;
-    
+    color: #FDFDFE;
     background-color: #FDFDFE;
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
@@ -16,7 +51,8 @@ body {
 }
 
 h1 {
-
+font-family: sans-serif;
+font-size: 24px;
 }
 
 h2 {
@@ -38,6 +74,8 @@ h3 {
 
 .container {
     /*change to min() for layout solution*/
+    width: 1200px;
+    margin: 0 auto;
 
 }
 
@@ -62,10 +100,11 @@ h2.tag::before {
 /* HEADER */
 
 .header {
-
+   background-color: #4484CE;
 }
 
 .header .container {
+    color: #FFFFFF;
 
 }
 
@@ -74,11 +113,11 @@ h2.tag::before {
 }
 
 .header-search {
-
+    background-color: #7aa8dc;
 }
 
 .header-search::placeholder {
-
+    color: #FFFFFF;
 }
 
 nav .nav-list {
@@ -88,11 +127,12 @@ nav .nav-list {
 /* CONTENT */
 
 .main-header-header{
+    color: #4a4a4a;
 
 }
 
 .section-header {
-
+    color: #4a4a4a;
 }
 /* ARTICLE */
 
@@ -163,15 +203,17 @@ nav .nav-list {
 }
 
 .article-header {
+    font-size: 20px;
+    color: #FFFFFF;
 
 }
 
 .article-summery {
-
+    color: #d3d3d3;
 }
 
 .article-tag {
-
+    font-size: 14px;
 }
 
 .article-tag:hover {
@@ -185,33 +227,37 @@ nav .nav-list {
 }
 
 .news-article {
-
+    height: 350px;
+    
 }
 
 .news-article-image {
-
+    height: 200px;
 }
 
 .news-article-header {
-
+    font-size: 20px;
+    color: #212121;
 }
 
 .news-article-summary {
+    color: #d3d3d3;
 
 }
 
 .news-article-tag {
+    font-size: 14px;
 
 }
 
 .main-header-timestamp {
-
+    color: #6c6c6c;
 }
 
 /* FOOTER */
 
 footer {
-
+    background-color: #4c4c4c;
 
 }
 
@@ -220,5 +266,5 @@ footer .link-grid {
 }
 
 .footer .footer-list-item {
-
+    color: #FFFFFF;
 }

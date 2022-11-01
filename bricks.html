@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css grids with bricks</title>
+    <style>
+      .container {
+        text-align: center;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      #content1 {
+        background-color: blueviolet;
+        grid-area: 1 / 1 / span 2 / span 4;
+      }
+      #content2 {
+        background-color: pink;
+        grid-area: 3/ 1 / span 2 / span 2;
+      }
+      #content3 {
+        background-color: bisque;
+        grid-area: 3/ 3 / span 1 / span 1;
+      }
+      #content4 {
+        background-color: chocolate;
+        grid-area: 3/ 4 / span 1 / span 1;
+      }
+      #content5 {
+        background-color: cornflowerblue;
+        grid-area: 4/ 3 / span 1 / span 1;
+      }
+      #content6 {
+        background-color: darkgreen;
+        grid-area: 4/ 4 / span 1 / span 1;
+      }
+      /* .content:nth-child(odd) {
+        background-color: aqua;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container" id="wall1">
+      <div class="content" id="content1">main</div>
+      <div class="content" id="content2">sport</div>
+      <div class="content" id="content3">news</div>
+      <div class="content" id="content4">world</div>
+      <div class="content" id="content5">music</div>
+      <div class="content" id="content6">weather</div>
+    </div>
+  </body>
+</html>

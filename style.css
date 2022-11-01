@@ -158,30 +158,31 @@ nav .nav-list {
 }
 
 .article.main-article {
-
+    grid-area: main-article;
 }
 
 .article1 {
-
+    grid-area: article-1;
 }
 
 .article2 {
-
+    grid-area: article-2;
 }
 
 .article3 {
-
+    grid-area: article-3;
 }
 
 .article4 {
+    grid-area: article-4;
 }
 
 .article5 {
-
+    grid-area: article-5;
 }
 
 .article6 {
-
+    grid-area: article-6;
 }
 
 
@@ -223,6 +224,11 @@ nav .nav-list {
 /* NEWS ARTICLE */
 
 .news-articles {
+    background-color: #212121;
+    display: grid;
+    gap: 4px;
+    grid-template-columns: 1fr 2fr 4fr 100px;
+    grid-template-rows: repeat(3, 25px);
 
 }
 

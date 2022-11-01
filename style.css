@@ -138,8 +138,8 @@ nav .nav-list {
 
 .article {
 
-
 }
+
 
 .article:hover .article-overlay {
 
@@ -148,9 +148,14 @@ nav .nav-list {
 
 
 .featured-articles {
-
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
+.featured-articles:nth-child(odd) {
+    background-color:burlywood;
+}
 
 /* In pseudo redefine background gradient as .article-overlay */
 .article-overlay {
@@ -158,32 +163,45 @@ nav .nav-list {
 }
 
 .article.main-article {
-    grid-area: main-article;
+    background-color: blueviolet;
+    grid-area: 1 / 1 / span 2 / span 4;
 }
 
 .article1 {
-    grid-area: article-1;
+    background: #eb01a5;
+    background-image: url("https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/702C/production/_127461782_whatsappimage2022-11-01at10.32.19am.jpg"); /* fallback */
+    background-image: url("https://ichef.bbc.co.uk/wwhp/624/cpsprodpb/702C/production/_127461782_whatsappimage2022-11-01at10.32.19am.jpg"), linear-gradient(#eb01a5, #d13531); /* W3C */
+    grid-area: 3/ 1 / span 2 / span 2;
 }
 
 .article2 {
-    grid-area: article-2;
+    background: #eb01a5;
+    background-image: url("https://ichef.bbc.co.uk/wwhp/304/cpsprodpb/11EC8/production/_127461437_gettyimages-1244384170.jpg"); /* fallback */
+    background-image: url("https://ichef.bbc.co.uk/wwhp/304/cpsprodpb/11EC8/production/_127461437_gettyimages-1244384170.jpg"), linear-gradient(#eb01a5, #d13531); /* W3C */
+    
+    background-color: bisque;
+    grid-area: 3/ 3 / span 1 / span 1;
 }
 
 .article3 {
-    grid-area: article-3;
+    background-color: chocolate;
+    grid-area: 3/ 4 / span 1 / span 1;
 }
 
 .article4 {
-    grid-area: article-4;
+    background-color: cornflowerblue;
+    grid-area: 4/ 3 / span 1 / span 1;
 }
 
 .article5 {
-    grid-area: article-5;
+    background-color: darkgreen;
+    grid-area: 4/ 4 / span 1 / span 1;
 }
 
-.article6 {
-    grid-area: article-6;
-}
+/* .article6 {      removed due to not existing
+    background-color:chartreuse;
+    grid-area: 4/ 4 / span 1 / span 1;
+} */
 
 
 .main-article-play-icon {
@@ -224,14 +242,9 @@ nav .nav-list {
 /* NEWS ARTICLE */
 
 .news-articles {
-    background-color: #212121;
     display: grid;
-    gap: 4px;
-    grid-template-columns: 1fr 2fr 4fr 100px;
-    grid-template-rows: repeat(3, 25px);
-
+    grid-template: 1fr / auto auto auto;
 }
-
 .news-article {
     height: 350px;
     

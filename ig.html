@@ -6,47 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram clone</title>
     <style>
+      * {
+        margin: 0px;
+      }
+      header {
+        width: 300px;
+        height: 40px;
+      }
+      .card-container {
+        width: 400px;
+        height: 500px;
+      }
+      .header-content {
+        width: 300px;
+        height: 40px;
+        display: flex;
+      }
+      .header-content img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border-style: solid;
+      }
+      .header-content p {
+        width: 250px;
+        height: 40px;
+      }
+      .more-info {
+        width: 50px;
+        height: 40px;
+      }
       .card {
         /* background-image: url("https://picsum.photos/300/400?blur") ; fallback */
         /* background-image: linear-gradient(
-            rgba(0, 0, 255, 0.5),
-            rgba(255, 255, 0, 0.5)
-          ),
-          url("/images/article/article-image4.jpeg"); */
-      }
-      .card-image {
+                rgba(0, 0, 255, 0.5),
+                rgba(255, 255, 0, 0.5)
+              ),
+              url("/images/article/article-image4.jpeg"); */
         position: relative;
+        width: 300px;
+        height: 400px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .card-img {
+        opacity: 0.8;
       }
       .card-content {
         position: absolute;
         left: 30px;
-        top: 250px;
+        top: 150px;
       }
       .card-content p {
-        contain: content;
+        font-weight: 900;
+        color: #000000;
+      }
+      .actionbar {
+        width: 300px;
+        height: 20px;
+        display: flex;
+      }
+      .actionbar span {
+        /*this will make the icons and text to be in the same line*/
+        display: inline-block;
+        /* this will give the ikons some space */
+        margin-right: 10px;
+      }
+      #save {
+        /* this code will align save to the right */
+        margin-right: 0px;
+        margin-left: auto;
+      }
+      .meny-container {
+        width: 50px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
       }
     </style>
   </head>
   <body>
-    <div class="card-contaier">
+    <div class="card-container">
       <header>
-        <div class="header-content">Commercial corp</div>
+        <div class="header-content">
+          <img src="https://picsum.photos/300/400?blur" alt="profilePic" />
+          <p>Commercial corp</p>
+          <span class="more-info">...</span>
+        </div>
       </header>
+
       <div class="card">
         <div class="card-img">
           <img src="https://picsum.photos/300/400?blur" alt="" />
+        </div>
 
-          <div class="card-content">
-            <h3>buy more shit</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              amet eius, eos blanditiis a libero eveniet dolore dolorem rerum
-              obcaecati.
-            </p>
-            <button>press here</button>
-          </div>
+        <div class="card-content">
+          <h3>buy more shit</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima amet
+            eius, eos blanditiis a libero eveniet dolore dolorem rerum
+            obcaecati.
+          </p>
+          <button>press here</button>
+        </div>
+
+        <div class="actionbar">
+          <span class="ikon" id="heart"> &#9825;</span>
+          <span class="ikon" id="message">&#128488;</span>
+          <span class="ikon" id="forward">&#9709;</span>
+          <span class="ikon" id="save"> &#128278;</span>
+        </div>
+
+        <div class="text-area">
+          <textarea name="message" id="" cols="40" rows="5"></textarea>
         </div>
       </div>
+      <nav>
+        <div class="meny-container">
+          <!-- this will be instagram ikons. Home,Search,Explore, Messages, Notifications, Create, Profile -->
+          <div class="meny-item">
+            <span class="ikon" id="home">&#127968;</span>
+            <span class="ikon" id="search">&#128269;</span>
+            <span class="ikon" id="explore">&#128065;</span>
+            <span class="ikon" id="messages">&#128172;</span>
+            <span class="ikon" id="notifications">&#128276;</span>
+            <span class="ikon" id="create">&#128221;</span>
+            <span class="ikon" id="profile">&#128100;</span>
+          </div>
+        </div>
+      </nav>
     </div>
   </body>
 </html>

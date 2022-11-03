@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://css.gg/css" rel="stylesheet" />
+    <title>ig meny</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      body {
+        display: flex;
+      }
+      header {
+        width: 300px;
+        height: 40px;
+      }
+      .card-container {
+        width: 400px;
+        height: 500px;
+      }
+      .header-content {
+        width: 300px;
+        height: 40px;
+        display: flex;
+      }
+      .header-content img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border-style: solid;
+      }
+      .header-content p {
+        width: 250px;
+        height: 40px;
+      }
+      .more-info {
+        width: 50px;
+        height: 40px;
+      }
+      .card {
+        /* background-image: url("https://picsum.photos/300/400?blur") ; fallback */
+        /* background-image: linear-gradient(
+                rgba(0, 0, 255, 0.5),
+                rgba(255, 255, 0, 0.5)
+              ),
+              url("/images/article/article-image4.jpeg"); */
+        position: relative;
+        width: 300px;
+        height: 400px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .card-img {
+        opacity: 0.8;
+      }
+      .card-content {
+        position: absolute;
+        left: 30px;
+        top: 150px;
+      }
+      .card-content p {
+        font-weight: 900;
+        color: #000000;
+      }
+      .actionbar {
+        width: 300px;
+        height: 20px;
+        display: flex;
+      }
+      .actionbar span {
+        /*this will make the icons and text to be in the same line*/
+        display: inline-block;
+        /* this will give the ikons some space */
+        margin-right: 10px;
+      }
+      #save {
+        /* this code will align save to the right */
+        margin-right: 0px;
+        margin-left: auto;
+      }
+      .meny-container {
+        width: 50px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* 
+      this is for styling the nav bar */
+      .nav-header {
+        width: 300px;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+        font-style: italic;
+      }
+      .meny-container {
+        justify-content: flex-start;
+        order: 1; /*  this is to keep in place no matter how the html is written */
+        width: 200px;
+        height: 100vh;
+      }
+      .meny-item a:link {
+        color: black;
+        height: 4rem;
+      }
+      .meny-item a:visited {
+        color: black;
+      }
+      .meny-item a:hover {
+        color: black;
+        /* this will give shadow effect when hovering */
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+        /* and will give darker color when hovering */
+        background-color: #e6e6e6;
+      }
+
+      .meny-container li {
+        list-style: none;
+      }
+      .meny-container a {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 200px;
+        text-decoration: none;
+      }
+      .ikon {
+        font-size: larger;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="meny-container">
+        <!-- this will be instagram ikons. Home,Search,Explore, Messages, Notifications, Create, Profile -->
+        <div class="meny-item">
+          <div class="nav-header">
+            <h2>Instagram</h2>
+          </div>
+
+          <li>
+            <a href="#home">
+              <span class="ikon" id="home" style="color: rgb(67, 161, 12)"
+                >&#9962;</span
+              >
+              Home</a
+            >
+          </li>
+          <li>
+            <a href="#search">
+              <span class="ikon" id="search">&#128269;</span> Search</a
+            >
+          </li>
+          <li>
+            <a href="#explore">
+              <span class="ikon" id="explore">&#128065;</span> Explore</a
+            >
+          </li>
+          <li>
+            <a href="#messages">
+              <span class="ikon" id="messages">&#128172;</span> Messages</a
+            >
+          </li>
+          <li>
+            <a href="#notifications">
+              <span class="ikon" id="notifications">&#128276;</span>
+              Notifications</a
+            >
+          </li>
+          <li>
+            <a href="#create">
+              <span class="ikon" id="create">&#128221;</span> Create</a
+            >
+          </li>
+          <li>
+            <a href="#profile">
+              <span class="ikon" id="profile">&#128100;</span> Profile</a
+            >
+          </li>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="card-container">
+        <header>
+          <div class="header-content">
+            <img src="https://picsum.photos/300/400?blur" alt="profilePic" />
+            <p>Commercial corp</p>
+            <span class="more-info">...</span>
+          </div>
+        </header>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="https://picsum.photos/300/400?blur" alt="" />
+          </div>
+
+          <div class="card-content">
+            <h3>buy more shit</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              amet eius, eos blanditiis a libero eveniet dolore dolorem rerum
+              obcaecati.
+            </p>
+            <button>press here</button>
+          </div>
+
+          <div class="actionbar">
+            <span class="ikon" id="heart"> &#9825;</span>
+            <span class="ikon" id="message">&#128488;</span>
+            <span class="ikon" id="forward">&#9709;</span>
+            <span class="ikon" id="save"> &#128278;</span>
+          </div>
+
+          <div class="text-area">
+            <textarea name="message" id="" cols="40" rows="5"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
